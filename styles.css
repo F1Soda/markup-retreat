@@ -12,7 +12,6 @@
 
 .star-container img {
     position: absolute;
-    pointer-events: none;
 }
 
 .star-container img:nth-child(1) {
@@ -20,8 +19,9 @@
     transition: opacity 0.2s;
 }
 
-.star-container:hover img:nth-child(1),
+
 .star-container.hover img:nth-child(1) {
+    transition: opacity 0.2s;
     opacity: 1;
 }
 
