@@ -1,1 +1,31 @@
-/* Пиши стили тут */
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.star-container img {
+    position: absolute;
+    pointer-events: none;
+}
+
+.star-container img:nth-child(1) {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.star-container:hover img:nth-child(1),
+.star-container.hover img:nth-child(1) {
+    opacity: 1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
